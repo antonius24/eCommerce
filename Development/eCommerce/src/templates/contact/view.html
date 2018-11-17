@@ -20,11 +20,15 @@
     	<div class='col'>
     		<p>{{ content }} </p>
         <form method='POST'> {% csrf_token %}
+          {{ form }}
+          <button type='submit' class='btn btn-defualt'>Submit</button>
+        </form>
+<!--         <form method='POST'> {% csrf_token %}
           <input type='email' class='form-control' placeholder="Name" name='fullname'>
           <input type='text' class='form-control' placeholder="Email" name='email'>
           <textarea name='content' class='form-control' placeholder="Your Content"></textarea>
           <button type='submit' class='btn btn-defualt'>Submit</button>
-        </form>
+        </form> -->
     	</div>
     </div>
 	</div>
